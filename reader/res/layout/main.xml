@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@color/background"
+    >
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="wrap_content" 
+android:orientation="horizontal"
+android:id="@+id/linear"
+android:gravity="center"
+android:layout_marginTop="3dip"
+>
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+
+android:id="@+id/input"
+android:layout_marginLeft="3dp"
+android:layout_marginRight="3dp"
+android:text="Input Text"
+android:width="100dip"
+android:textSize="11dip"
+/>
+<Button
+android:layout_marginLeft="3dp"
+android:layout_marginRight="3dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:id="@+id/load"
+android:textSize="11dip"
+android:text="Load Text"
+android:width="100dip"/>
+<Button
+android:layout_marginLeft="3dp"
+android:layout_marginRight="3dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:id="@+id/close_program"
+android:textSize="11dip"
+android:text="Close Program"
+android:width="100dip"/>
+</LinearLayout>
+<ScrollView
+	
+    android:gravity="center"
+   android:layout_width="fill_parent" 
+    	android:layout_height="150dp"
+    android:layout_below="@+id/linear"
+    android:layout_margin="7dip"
+    android:id="@+id/scrollview"
+    android:scrollbars="vertical">
+<TextView
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:id="@+id/text_view1"
+   
+    
+    android:textColorHint="@color/text_color"
+    android:clickable="true" 
+    
+    android:textSize="16dip"  
+    
+    />
+    </ScrollView>
+<!--<GridView 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/grid_view"
+    android:gravity="center"
+    android:minHeight="200dip"
+    android:numColumns="6"
+    android:verticalSpacing="5dip"  
+    android:horizontalSpacing="2dip" 
+    android:layout_below="@+id/linear"
+    android:layout_above="@+id/table_images"       
+    />-->
+<TableLayout
+	android:id="@+id/table_images"
+	 android:layout_width="wrap_content"
+    
+    android:layout_height="220dip"
+    android:gravity="center"    
+    android:layout_below="@+id/scrollview"        
+    android:layout_centerHorizontal="true"
+    android:layout_marginRight="3dip"
+    android:layout_marginBottom="3dip"
+    android:layout_marginTop="3dip"
+    >
+    <TableRow>
+    <ImageView
+    	android:adjustViewBounds="true"
+    	android:maxWidth="130dip"
+    	android:maxHeight="90dip"
+    	android:padding="10dip"
+    	android:id="@+id/imageview1"
+    	android:minWidth="80dip"
+    	android:layout_gravity="center"
+    	
+    	/>
+     <ImageView
+    	android:padding="10dip"
+    	android:adjustViewBounds="true"
+    	android:maxWidth="130dip"
+    	android:maxHeight="90dip"
+    	android:id="@+id/imageview2"
+    	android:minWidth="80dip"
+    	
+    	android:layout_gravity="center"/>     
+    </TableRow>
+    <TableRow>
+     <TextView
+    
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:id="@+id/image_text1"
+     android:gravity="center"
+    />
+    <TextView
+    
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:id="@+id/image_text2"
+     android:gravity="center"
+    />
+    </TableRow>
+    <TableRow>
+     <ImageView
+     	android:padding="10dip"
+    	android:adjustViewBounds="true"
+    	android:maxWidth="130dip"
+    	android:maxHeight="90dip"
+    	android:id="@+id/imageview3"
+    	android:minWidth="80dip"
+    	
+    	android:layout_gravity="center"/> 
+     <ImageView
+     	android:padding="10dip"
+    	android:adjustViewBounds="true"
+    	android:maxWidth="130dip"
+    	android:maxHeight="90dip"
+    	android:id="@+id/imageview4"
+    	android:minWidth="80dip"
+    	
+    	android:layout_gravity="center"/>     
+    </TableRow>
+    <TableRow>
+     <TextView
+    
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:id="@+id/image_text3"
+     android:gravity="center"
+    />
+    <TextView
+    
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:id="@+id/image_text4"
+     android:gravity="center"
+    />
+    </TableRow>    
+</TableLayout>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="30dip" 
+android:orientation="horizontal"
+android:id="@+id/linear2"
+android:gravity="center"
+android:layout_marginTop="3dip"
+android:layout_alignParentBottom="true"
+>
+<Button
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+
+android:id="@+id/read"
+android:layout_marginLeft="3dp"
+android:layout_marginRight="3dp"
+android:text="Read"
+android:width="100dip"
+android:textSize="11dip"
+/>
+<Button
+android:layout_marginLeft="3dp"
+android:layout_marginRight="3dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:id="@+id/edit"
+android:textSize="11dip"
+android:text="Edit Text"
+android:width="100dip"/>
+<Button
+android:layout_marginLeft="3dp"
+android:layout_marginRight="3dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:id="@+id/save"
+android:textSize="11dip"
+android:text="Save Text"
+android:width="100dip"/>
+</LinearLayout>
+	
+</RelativeLayout>
+<!--  
+scrollview:-android:layout_width="fill_parent" 
+    	android:layout_height="150dp"
+table:    android:layout_width="wrap_content"
+    
+    android:layout_height="220dip"
+    -->

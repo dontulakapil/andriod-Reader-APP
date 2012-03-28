@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@color/background"
+    
+    >
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="wrap_content" 
+android:orientation="horizontal"
+android:layout_alignParentTop="true"
+android:id="@+id/linear"
+android:gravity="center"
+android:layout_marginTop="5dip"
+>
+<Button
+android:width="100dip"
+android:textSize="11dip"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+
+android:id="@+id/input"
+android:layout_marginLeft="10dp"
+android:layout_marginRight="10dp"
+android:text="Input Text"/>
+<Button
+android:width="100dip"
+android:textSize="11dip"
+android:layout_marginLeft="10dp"
+android:layout_marginRight="10dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:id="@+id/load"
+
+android:text="Load Text"/>
+<Button
+android:width="100dip"
+android:textSize="11dip"
+android:layout_marginLeft="10dp"
+android:layout_marginRight="10dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:id="@+id/close_program"
+
+android:text="Close Program"/>
+</LinearLayout>
+<ScrollView
+	
+    android:gravity="center"
+    android:layout_width="450dip" 
+    android:layout_height="350dip"
+    android:layout_below="@+id/linear" 
+    android:layout_alignParentLeft="true"
+    android:layout_toLeftOf="@+id/table_images" 
+    android:layout_margin="10dip"
+    android:layout_above="@+id/linear2"
+    android:id="@+id/scrollview">
+<TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/text_view1"        
+    android:hint="Enter text to start.............." 
+    android:textColorHint="@color/text_color"
+    android:clickable="true" 
+    android:lineSpacingExtra="5dip"
+    android:textSize="20dip"    
+    />
+    </ScrollView>
+<LinearLayout
+android:gravity="center"
+android:orientation="horizontal"
+android:layout_alignParentBottom="true"
+android:layout_below="@+id/linear2"
+android:layout_width="fill_parent"
+android:layout_height="30dp"
+>
+<Button
+android:width="100dip"
+android:textSize="11dip"
+android:layout_marginLeft="3dp"
+android:layout_marginRight="1dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:id="@+id/read"
+android:text="Read"/>
+<Button
+android:width="100dip"
+android:textSize="11dip"
+android:layout_marginLeft="2dp"
+android:layout_marginRight="1dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:id="@+id/edit"
+
+android:text="Edit Text"/>
+<Button
+android:width="100dip"
+android:textSize="11dip"
+android:layout_marginLeft="2dp"
+android:layout_marginRight="3dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:id="@+id/save"
+
+android:text="Save Text"/>
+
+</LinearLayout>
+    
+<TableLayout
+	android:id="@+id/table_images"
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:gravity="center"   
+    android:minWidth="150dip"
+    android:layout_toRightOf="@+id/scrollview"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/linear"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:layout_marginBottom="2dip"  
+    android:layout_marginTop="5dip"
+    android:layout_above="@+id/linear2"
+    >
+    <TableRow>
+    <ImageView
+    	android:adjustViewBounds="true"
+    	android:maxWidth="180dip"
+    	android:maxHeight="150dip"
+    	android:padding="10dip"
+    	android:id="@+id/imageview1"
+    	android:minWidth="60dip"    	
+    	/>
+     <ImageView
+    	android:padding="10dip"
+    	android:adjustViewBounds="true"
+    	android:maxWidth="180dip"
+    	android:maxHeight="150dip"
+    	android:id="@+id/imageview2"
+    	android:minWidth="60dip"/>     
+    </TableRow>
+     <TableRow>
+     <TextView
+   
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:id="@+id/image_text1"
+     android:gravity="center"
+    />
+    <TextView
+   
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:id="@+id/image_text2"
+     android:gravity="center"
+    />
+    </TableRow>
+    <TableRow>
+    <View   
+    android:layout_width="fill_parent"
+    android:layout_height="2dip"
+    >
+    </View>
+    </TableRow>
+    <TableRow>
+     <ImageView
+     	android:padding="10dip"
+    	android:adjustViewBounds="true"
+    	android:maxWidth="180dip"
+    	android:maxHeight="150dip"
+    	android:id="@+id/imageview3"
+    	android:minWidth="60dip"/> 
+     <ImageView
+     	android:padding="10dip"
+    	android:adjustViewBounds="true"
+    	android:maxWidth="180dip"
+    	android:maxHeight="150dip"
+    	android:id="@+id/imageview4"
+    	android:minWidth="60dip"/>     
+    </TableRow>    
+    <TableRow>
+     <TextView
+    
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:id="@+id/image_text3"
+     android:gravity="center"
+    />
+    <TextView
+    
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:id="@+id/image_text4"
+     android:gravity="center"
+    />
+    </TableRow>
+</TableLayout>
+	
+</RelativeLayout>
+
+<!--android:layout_width="260dip" 
+    android:layout_height="200dip"--> 
+    
+    <!--android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"--> 

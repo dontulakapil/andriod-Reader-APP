@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World</string>
+    <string name="app_name">Assistive Reader</string>
+<string name="close_program">Close Application</string>
+    <string name="input_text">Input Text</string>
+    <string name="reject"> Cancel </string>
+    <string name="accept">  Ok  </string>
+</resources>
